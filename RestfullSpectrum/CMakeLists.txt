@@ -1,8 +1,9 @@
 cmake_minimum_required(VERSION 3.20)
 project(RestfullSpectrum C)
 
-include_directories(/home/nicked/workspace/usb2000/SeaBreeze/include
-        /usr/include/postgresql)
+include_directories(
+        /usr/include/postgresql
+       ../SeaBreeze/include )
 
 link_directories(~/workspace/usb2000/SeaBreeze
         /usr/lib/x86_64-linux-gnu)

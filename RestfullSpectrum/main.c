@@ -3,10 +3,9 @@
 
 #include "src/handler.h"
 #include "src/usb2000/usb2000.h"
-#include "api/SeaBreezeWrapper.h"
 #include "src/usb2000/util.h"
 #include "cjson/cJSON.h"
-#include "src/usb2000/seabreeze-util.h"
+#include "api/SeaBreezeWrapper.h"
 
 #define PORT 3000
 
