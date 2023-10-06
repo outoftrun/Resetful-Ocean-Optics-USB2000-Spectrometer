@@ -1,0 +1,11 @@
+RestfullPlotlyView/node_modules/
+RestfullSpectrum/CMakeFiles/
+old/
+RestfullSpectrum/.cmake/
+RestfullSpectrum/CMakeCache.txt
+RestfullSpectrum/Makefile
+RestfullSpectrum/RestfullSpectrum
+RestfullSpectrum/RestfullSpectrum.cbp
+RestfullSpectrum/Testing/
+RestfullSpectrum/cmake-build-debug/
+RestfullSpectrum/cmake_install.cmake
