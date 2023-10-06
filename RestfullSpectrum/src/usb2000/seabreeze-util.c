@@ -243,7 +243,7 @@ int do_items(void *cls, enum MHD_ValueKind kind, const char *key, const char *va
                 seabreeze_set_integration_time_microsec(0, &error, 965500);
                 getDataFormated(0);
                 gettimeofday(&tv_start, NULL);
-                double elapsed_sec=0;cp
+                double elapsed_sec=0;
 
                 for (int n = 0; n < ret; n++) {
 
