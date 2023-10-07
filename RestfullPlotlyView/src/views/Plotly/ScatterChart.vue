@@ -42,7 +42,7 @@ export default {
   },
   mounted: function () {
     this.getScatterChart()
-
+    console.log(process.env.VUE_APP_NOT_SECRET_CODE)
     axios.get('http://thinkpad-t470p.local:3000/ocean?wavelength&spectrum=1')
         .then(response => {
           // handle success
