@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="RibbonChart"></div>
+    <div id="SurfaceChart"></div>
 
 
   </div>
@@ -11,7 +11,7 @@ import axios from "axios";
 //import * as d3 from "d3";
 
 export default {
-  name: "RibbonChart",
+  name: "SurfaceChart",
 
   data: function () {
     return {
@@ -39,7 +39,7 @@ export default {
       else
         this.dataChanged = true
       console.log(this.xData)
-      this.getRibbonChart()
+      this.getSurfaceChart()
     },
 
     yData: function (oldVal, newVal) {
@@ -48,11 +48,11 @@ export default {
       // else
       //   this.dataChanged = true
       console.log(this.yData)
-      this.getRibbonChart()
+      this.getSurfaceChart()
     }
   },
   mounted: function () {
-    this.getRibbonChart()
+    this.getSurfaceChart()
     const len = 30;
     const url = 'http://thinkpad-t470p.local:3000/ocean?spectrum=' + len;
     axios.get(url)
@@ -63,7 +63,7 @@ export default {
           // const setFlag = () => this.isDoneLoading = true
           // await setFlag()
           //  console.log(response["data"]["times"]);
-          //  Vue.set(RibbonChart.trace.x,1,2);
+          //  Vue.set(SurfaceChart.trace.x,1,2);
           let tmp = [];
           for (let e = 0; e < len; e++) {
             let w = [];
@@ -89,7 +89,7 @@ export default {
   },
   methods: {
 
-    getRibbonChart() {
+    getSurfaceChart() {
       const data1 = [{
         z: this.yData,
         //  type: 'contour'
@@ -100,7 +100,7 @@ export default {
         title: 'Basic Contour Plot'
       }
 
-      Plotly.newPlot('RibbonChart', data1, layout);
+      Plotly.newPlot('SurfaceChart', data1, layout);
     },
   },
 };

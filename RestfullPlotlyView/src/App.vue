@@ -47,7 +47,8 @@ export default {
       { title: "ContinuousErrorBar",icon: "mdi-help-box",to: "/ContinuousErrorBar"},
       { title: "Barchart", icon: "mdi-view-dashboard", to: "/BarChart" },
       {title: "scatterChart", icon: "mdi-view-dashboard", to: "/ScatterChart"},
-
+      {title: "RibbonPlot", icon: "mdi-view-dashboard", to: "/RibbonPlot"},
+      {title: "SurfacePlot", icon: "mdi-view-dashboard", to: "/SurfacePlot"},
     ],
   }),
 };

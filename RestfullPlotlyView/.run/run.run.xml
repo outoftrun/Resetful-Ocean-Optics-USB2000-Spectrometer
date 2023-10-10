@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="run" type="NodeJSConfigurationType" application-parameters="run serve" path-to-node="$USER_HOME$/.local/share/pnpm/pnpm" working-dir="$PROJECT_DIR$">
+    <method v="2" />
+  </configuration>
+</component>

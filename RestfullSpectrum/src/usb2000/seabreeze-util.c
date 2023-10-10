@@ -240,7 +240,7 @@ int do_items(void *cls, enum MHD_ValueKind kind, const char *key, const char *va
                 cJSON *Spectrum_array = cJSON_CreateArray();
                 cJSON *time = cJSON_CreateArray();
 
-                seabreeze_set_integration_time_microsec(0, &error, 965500);
+                seabreeze_set_integration_time_microsec(0, &error, 96550);
                 getDataFormated(0);
                 gettimeofday(&tv_start, NULL);
                 double elapsed_sec=0;

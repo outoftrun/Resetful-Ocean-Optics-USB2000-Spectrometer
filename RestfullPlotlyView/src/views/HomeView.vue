@@ -1,27 +1,21 @@
 <template>
-<div>
-
-    <vue-ip :on-change="ipChange" :placeholder="true" :ip="ip" :port="port" :theme="theme">IP Address</vue-ip>
-
-</div>
+    <h3>"{{getIP}}</h3>
 </template>
 
 <script>
 import HelloWorld from '../components/HelloWorld'
-import VueIp from "@/components/VueIp.vue";
+import store from "@/store";
 
 export default {
   name: 'Home',
 
   components: {
     HelloWorld,
-    VueIp
-
   },
 
   data() {
     return {
-      ip: '192.168.100.100',
+
       port: false,
       valid: null,
       theme: 'material'
@@ -57,7 +51,7 @@ export default {
     changeIp(port) {
       this.ip = this.random() + '.' + this.random() + '.' + this.random() + '.' + this.random();
 
-      if(port)
+      if (port)
         this.port = '' + this.random(1, 9) + this.random(1, 9) + this.random(1, 9) + this.random(1, 9);
       else
         this.port = false;
@@ -68,7 +62,7 @@ export default {
      */
     materialSwitch() {
 
-      if(!this.theme)
+      if (!this.theme)
         this.theme = 'material';
       else
         this.theme = false;
@@ -87,10 +81,13 @@ export default {
 
     }
 
-  }
-}
-</script>
-
+  },
+  computed:
+      {
+        getIP() {
+          return store.state.ip
+        },
+      }
 }
 
 

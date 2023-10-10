@@ -9,6 +9,8 @@ import BoxPlot from '../views/Plotly/BoxPlot.vue'
 import BubbleChart from '../views/Plotly/BubbleChart.vue'
 import ContinuousErrorBar from '../views/Plotly/ContinuousErrorBar.vue'
 import ScatterChart from "@/views/Plotly/ScatterChart.vue";
+import RibbonPlots from "@/views/Plotly/RibbonPlots.vue";
+import SurfacePlots from "@/views/Plotly/SurfacePlots.vue";
 
 Vue.use(VueRouter)
 
@@ -32,7 +34,8 @@ const routes = [
   {path: '/ContinuousErrorBar',component:ContinuousErrorBar },
   {path: '/BarChart',component:BarChart },
   {path: '/ScatterChart', component: ScatterChart},
-
+  {path: '/RibbonPlot', component: RibbonPlots},
+  {path: '/SurfacePlot', component: SurfacePlots},
 ]
 
 const router = new VueRouter({
