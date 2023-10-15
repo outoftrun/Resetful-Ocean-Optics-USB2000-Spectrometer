@@ -3,7 +3,7 @@ Using the Ocean Optics Seabreaze, vue and plotly the first pass at a network int
 very much a work in progress
 
 
-![Alt text] (./image/newplot.png?raw=true "output")
+![plot](./image/newplot.png?raw=true "output")
 working on build on :
 	Description:	Ubuntu 22.04.3 LTS,
 	Release:	22.04,
