@@ -457,7 +457,7 @@ int mainQ(int argc, char **argv) {
     ////////////////////////////////////////////////////////////////////////////
 
     for (int i = 0; i < SEABREEZE_MAX_DEVICES; i++) {
-        printf("%d\n", i);
+        LOG_DEBUG(("%d\n", i));
         if (!seabreeze_open_spectrometer(i, &error)) {
 
             connected_device_count++;
@@ -468,7 +468,7 @@ int mainQ(int argc, char **argv) {
 
     LOG_DEBUG(("%d devices found", connected_device_count));
     if (!connected_device_count) {
-        puts("ERROR: no spectrometers found");
+        LOG_DEBUG(("ERROR: no spectrometers found"));
         exit(1);
     }
 

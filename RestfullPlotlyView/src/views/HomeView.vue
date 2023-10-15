@@ -1,5 +1,5 @@
 <template>
-    <h3>"{{getIP}}</h3>
+    <h3>{{getIP}}</h3>
 </template>
 
 <script>
@@ -85,7 +85,7 @@ export default {
   computed:
       {
         getIP() {
-          return store.state.ip
+          return store.getters.ip
         },
       }
 }
